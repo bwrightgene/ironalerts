@@ -22,6 +22,9 @@ USERNAME = os.environ.get('ENV_EMAIL')
 PASSWORD = os.environ.get('ENV_EMAIL_PW')
 SENDER = 'ironphi@phideltatheta.org'
 
+print("Username:", os.environ.get('ENV_EMAIL'))
+print("Password:", os.environ.get('ENV_EMAIL_PW'))
+
 # Connect to email server
 mail = imaplib.IMAP4_SSL(HOST)
 mail.login(USERNAME, PASSWORD)
