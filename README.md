@@ -58,7 +58,8 @@ Follow these steps to set up and start using the Iron Alerts script to seamlessl
 
 <ul>
     <li>Python</li>
-    <li>An email that supports IMAP. NOTE: Due to GMail's security requirements, additional modifications to this script are required. <a href="https://proton.me/">Proton</a> is the recomended email provider.
+    <li>An email that supports IMAP. NOTE: Due to GMail's security requirements, additional modifications to this script are required. <a href="https://proton.me/">Proton</a> is the recomended email provider.</li>
+    <li>In your Iron Phi profile settings, ensure emails are set to send as plain text.</li>
 </ul>
 
 ### Installation
