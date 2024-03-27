@@ -113,8 +113,6 @@ Project Link: [https://github.com/bwrightgene/ironalerts](https://github.com/bwr
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
