@@ -13,16 +13,19 @@ def create_alert(name, amount):
     url = "https://streamlabs.com/api/v2.0/alerts"
     access_token = os.environ.get("STREAMLABS_ACCESS_TOKEN")
 
-    querystring = {
-        "access_token": access_token,
+    headers = {
+        "Authorization": f"Bearer {access_token}"
+    }
+
+    data = {
         "type": "donation",
         "message": f"{name} donated {amount} towards the Iron Phi campaign!",
         "duration": "3000",
         "special_text_color": "Orange"
     }
 
-    response = requests.post(url, params=querystring)
-    print(f'Request URL: {response.url}')  # Show the full URL after the query string is applied
+    response = requests.post(url, headers=headers, json=data)
+    print(f'Request URL: {response.url}')
     print(f'Status Code: {response.status_code}')
     print(f'Response: {response.text}')
 
@@ -35,6 +38,8 @@ def create_alert(name, amount):
     else:
         print('Received non-200 status code.')
         return None
+
+
 
 # Email server settings
 HOST = '127.0.0.1'
